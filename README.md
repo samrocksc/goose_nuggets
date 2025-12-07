@@ -69,6 +69,15 @@ Challenges based on the classic design patterns from the "Gang of Four" book.
 ### Data Structures & Algorithms
 Challenges focused on implementing and working with common data structures and algorithms.
 
+## Further Reading
+
+Ideally I'd like to create recipes for more than, so I want to include some links to things I could include in the future.  Below are the links to articles I've really enjoyed about3 each topic.
+
+- [x] [SOLID Principles](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
+- [x] [Clean Code](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29)
+- [x] [Gang of Four Patterns](https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns)
+- [ ] [Basics of Unix Philosophy](https://cscie2x.dce.harvard.edu/hw/ch01s06.html)
+
 ## Output Structure
 
 Generated challenges will follow this structure:
