@@ -1,0 +1,31 @@
+version: "1.0.0"
+title: "Senior Code Challenge Generator"
+description: "Generates file structures and initial code for various technical interviews."
+instructions: |
+  You are an expert technical interviewer. Your goal is to generate a challenge 
+  package based on the provided challenge_type. First, initialize a 
+  TypeScript project. Then, call the appropriate subrecipe tool for the 
+  specified challenge.
+parameters:
+  - key: challenge_type
+    input_type: string
+    requirement: required
+    description: "The type of challenge to generate (SOLID, Clean Code, GoF, DSA)."
+sub_recipes:
+  - name: "solid_challenge"
+    path: "./subrecipes/solid.yaml"
+  - name: "cleancode_challenge"
+    path: "./subrecipes/clean_code.yaml"
+  - name: "gof_challenge"
+    path: "./subrecipes/gang_of_four.yaml"
+  - name: "dsa_challenge"
+    path: "./subrecipes/data_structures.yaml"
+extensions:
+  - type: builtin
+    name: developer
+prompt: |
+  Start by initializing a Node.js TypeScript project. Based on the 
+  `challenge_type` {{ challenge_type }}, call the corresponding subrecipe tool 
+  to generate the challenge files and folder structure. Ensure all 
+  `*.solution.ts`, `*.solution.test.ts`, `*.correct.ts`, and 
+  instructions are correctly created as described.

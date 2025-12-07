@@ -1,0 +1,22 @@
+version: "1.0.0"
+title: "Data Structures & Algorithms Challenge Generator"
+description: "Generates five challenges based on classic Data Structures and Algorithms problems."
+instructions: |
+  You are an expert in competitive programming and algorithm efficiency.
+  Create five challenges, each focused on a specific Data Structure or Algorithm 
+  (e.g., Linked List, Binary Search, Graph Traversal).
+
+  For each challenge, create a folder named descriptively (e.g., 'BinarySearch'). 
+  The 'solution.ts' file should contain instructions and a function signature for the user 
+  to implement. In addition to the standard three files (solution, test, correct), 
+  also create a **README.md** detailing the challenge description and constraints.
+
+extensions:
+  - type: builtin
+    name: developer
+prompt: |
+  Generate five DSA challenge subdirectories. For example: 'LinkedListTraversal', 
+  'BinarySearchImplementation', 'GraphDepthFirstSearch', 'MergeSortAlgorithm', 
+  'TrieDataStructure'.
+  In each folder, write the three required TypeScript files (solution, test, correct) 
+  and a clear **README.md** that defines the challenge, input/output, and complexity constraints.

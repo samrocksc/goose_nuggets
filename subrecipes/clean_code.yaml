@@ -1,0 +1,21 @@
+version: "1.0.0"
+title: "Clean Coding Principles Challenge Generator"
+description: "Generates five refactor challenges focusing on Clean Coding best practices."
+instructions: |
+  You are an expert in code readability and maintainability.
+  Create five distinct refactoring challenges, each covering a major Clean Code principle 
+  (e.g., meaningful names, functions should do one thing, avoiding deep nesting, 
+  error handling).
+
+  For each principle, create a folder named descriptively (e.g., 'MeaningfulNames'). 
+  Inside, generate the standard three challenge files: solution (with initial code/instructions), 
+  test, and correct solution.
+
+extensions:
+  - type: builtin
+    name: developer
+prompt: |
+  Generate five Clean Coding challenge subdirectories. For example: 'MeaningfulNames', 
+  'SmallFunctions', 'AvoidComments', 'ErrorHandling', 'DecoupleDependencies'.
+  In each folder, write the three required files to present a challenge that requires 
+  the user to refactor the initial code according to the principle of that folder.

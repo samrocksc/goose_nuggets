@@ -1,0 +1,20 @@
+version: "1.0.0"
+title: "Gang of Four Design Patterns Challenge Generator"
+description: "Generates five challenges based on common Creational, Structural, and Behavioral patterns."
+instructions: |
+  You are a Design Patterns expert.
+  Create five challenges, each focused on implementing a specific Gang of Four (GoF) design pattern 
+  (e.g., Factory, Adapter, Observer, Strategy).
+
+  For each pattern, create a folder named after the pattern (e.g., 'FactoryPattern'). 
+  The challenge in the 'solution.ts' should ask the user to implement the pattern 
+  to solve a given problem using TypeScript. Generate the test and correct files as well.
+
+extensions:
+  - type: builtin
+    name: developer
+prompt: |
+  Generate five GoF Design Pattern challenge subdirectories. For example: 'FactoryPattern', 
+  'SingletonPattern', 'AdapterPattern', 'ObserverPattern', 'StrategyPattern'.
+  In each folder, write the three required files. The instructions must guide the user to 
+  implement the required design pattern effectively in TypeScript.

@@ -1,0 +1,25 @@
+version: "1.0.0"
+title: "SOLID Principles Challenge Generator"
+description: "Generates five refactor challenges, one for each SOLID principle."
+instructions: |
+  You are an expert in TypeScript and SOLID principles. 
+  Your task is to create a challenge folder for each of the five SOLID principles 
+  (Single Responsibility, Open/Close, Liskov, Interface Segregation, Dependency Inversion).
+
+  For each principle, create a folder named after the principle. Inside, generate 
+  the following files with appropriate TypeScript content and instructions:
+  1. `<name>.solution.ts`: Contains the initial, poorly structured code and the challenge instructions.
+  2. `<name>.solution.test.ts`: Contains unit tests that the refactored solution must pass.
+  3. `<name>.correct.ts`: Contains the recommended, fully refactored solution.
+
+  Use the developer extension to write all files and folders relative to the current project root.
+
+extensions:
+  - type: builtin
+    name: developer
+prompt: |
+  Create five challenge subdirectories named 'SingleResponsibility', 'OpenClose', 
+  'Liskov', 'InterfaceSegregation', and 'DependencyInversion'. 
+  Inside each, generate the required three TypeScript files: solution, test, and correct. 
+  Ensure the instructions in the solution files are clear, guiding the user to refactor 
+  the initial code to strictly adhere to the corresponding SOLID principle.
