@@ -14,7 +14,7 @@ This project is a comprehensive tool for generating technical interview challeng
 
 ## Prerequisites
 
-Before using this project, you need to have [Goose](https://github.com/abigger87/goose) installed on your system.
+Before using this project, you need to have [Goose](https://block.github.io/goose/) installed on your system.
 
 ## Usage
 
